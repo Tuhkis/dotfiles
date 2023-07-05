@@ -4,3 +4,9 @@
 [submodule "alacritty/.config/alacritty"]
 	path = alacritty/.config/alacritty
 	url = https://github.com/Tuhkis/alacri-yeet.git
+[submodule "zsh/powerlevel10k"]
+	path = zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "zsh/.zsh-autosuggest"]
+	path = zsh/.zsh-autosuggest
+	url = https://github.com/zsh-users/zsh-autosuggestions
