@@ -1,0 +1,1 @@
+return { path = "/home/anon/rpg", documents = {["type"]="leaf",["views"]={[1]={["scroll"]={["y"]=1626.3652880986,["x"]=0},["active"]=true,["text"]=false,["type"]="doc",["filename"]="src/main.c",["selection"]={[1]=39,[2]=14,[3]=39,[4]=14}}},["active_view"]=1}, directories = {} }

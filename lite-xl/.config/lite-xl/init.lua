@@ -64,15 +64,19 @@ config.plugins.treeview = false
 
 local lspconfig = require("plugins.lsp.config")
 
--- Check if clangd exists.
-local check_clangd = process.start { "sh", "-c", "whereis clangd" }
-while true do
-	local rdbuf = check_clangd:read_stdout()
-	if not (rdbuf == "clangd:") then
-		lspconfig.clangd.setup()
+local function add_lsp(l, s)
+	local checkP = process.start { "sh", "-c", "whereis " .. l }
+	while true do
+		local rdbuf = checkP:read_stdout()
+		if not (rdbuf == l .. ":") then
+			s()
+		end
+		if not rdbuf then break end
 	end
-	if not rdbuf then break end
 end
+
+add_lsp("clangd", lspconfig.clangd.setup)
+add_lsp("pyright-langserver", lspconfig.pyright.setup)
 
 config.plugins.lsp.stop_unneeded_servers = true
 config.plugins.lsp.mouse_hover = true
