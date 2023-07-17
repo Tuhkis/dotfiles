@@ -1,1 +1,32 @@
 secure: false
+prompt:
+  icons_ansi_color: 33
+  prompt_ansi_color: 96
+  characters:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  empty: '󱃓'
+  secure: '󰦝'
+  prompt_text: 'Enter Password  $  '

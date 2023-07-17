@@ -1,5 +1,5 @@
 alias nv="nvim"
-alias sudo="sudo -A"
+alias sudo="sudo"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=5000
