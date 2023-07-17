@@ -1,0 +1,1 @@
+return { path = "/home/anon", documents = {["type"]="leaf",["active_view"]=1,["views"]={[1]={["active"]=true,["type"]="view",["scroll"]={["x"]=0,["to"]={["x"]=0,["y"]=0},["y"]=0},["module"]="core.emptyview"}}}, directories = {} }
