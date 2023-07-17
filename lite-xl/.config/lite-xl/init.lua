@@ -62,6 +62,22 @@ style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Reg
 -- config.plugins.detectindent = false
 config.plugins.treeview = false
 
+local lspconfig = require("plugins.lsp.config")
+
+-- Check if clangd exists.
+local check_clangd = process.start { "sh", "-c", "whereis clangd" }
+while true do
+	local rdbuf = check_clangd:read_stdout()
+	if not (rdbuf == "clangd:") then
+		lspconfig.clangd.setup()
+	end
+	if not rdbuf then break end
+end
+
+config.plugins.lsp.stop_unneeded_servers = true
+config.plugins.lsp.mouse_hover = true
+config.plugins.lsp.mouse_hover_delay = 300
+
 ---------------------------- Miscellaneous -------------------------------------
 
 config.ignore_files = "a^"

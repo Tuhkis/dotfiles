@@ -10,3 +10,12 @@
 [submodule "zsh/.zsh-autosuggest"]
 	path = zsh/.zsh-autosuggest
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "lite-xl/.config/lite-xl/plugins/lsp"]
+	path = lite-xl/.config/lite-xl/plugins/lsp
+	url = https://github.com/lite-xl/lite-xl-lsp
+[submodule "lite-xl/.config/lite-xl/libraries/widget"]
+	path = lite-xl/.config/lite-xl/libraries/widget
+	url = https://github.com/lite-xl/lite-xl-widgets
+[submodule "lite-xl/.config/lite-xl/plugins/lintplus"]
+	path = lite-xl/.config/lite-xl/plugins/lintplus
+	url = https://github.com/liquidev/lintplus
