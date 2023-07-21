@@ -1,1 +1,1 @@
-return {recents={[3]="/home/anon/rpg",[1]="/home/anon/dotfiles/lite-xl/.config/lite-xl",[2]="/home/anon/pygame-project-template"}, window={[1]=1900,[2]=1038,[3]=10,[4]=32,["n"]=4}, window_mode="normal", previous_find={}, previous_replace={}}
+return {recents={}, window={[1]=950,[2]=1038,[3]=10,[4]=32,["n"]=4}, window_mode="normal", previous_find={}, previous_replace={}}
