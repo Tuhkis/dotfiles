@@ -88,6 +88,13 @@ config.plugins.lsp.mouse_hover_delay = 300
 
 config.ignore_files = "a^"
 
+--[[ local ev = require("core.emptyview")
+function ev.draw()
+	-- This is scuffed death :skull:
+	renderer.draw_rect(0, 0, 90000, 90000, style.background)
+	renderer.draw_text(style.big_font, "Hi yall!", 0, 0, style.text)
+end ]]--
+
 -- modify list of files to ignore when indexing the project:
 -- config.ignore_files = {
 --   -- folders

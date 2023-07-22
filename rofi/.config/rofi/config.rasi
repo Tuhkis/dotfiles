@@ -2,6 +2,8 @@ configuration {
     location: 						0;
     font:                           "Fira Code NerdFont 14";
     display-drun: 					"D";
+    display-run: 					"R";
+    combi-modi: "run,drun";
 }
 
 * {
