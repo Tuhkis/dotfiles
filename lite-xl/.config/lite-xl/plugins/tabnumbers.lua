@@ -34,7 +34,7 @@ function Node:draw_tab_title(view, font, is_active, is_hovered, x, y, w, h)
       padx = style.font:get_width(number) + (style.padding.x / 2)
       w = w - padx
       local color = is_active and style.text or style.dim
-      common.draw_text(style.font, color, number, nil, x, y, w, h)
+      common.draw_text(style.font, color, number, nil, x + 15, y, w, h)
     end
     local tx = x + padx -- Space for number
     Node_draw_tab_title(self, view, font, is_active, is_hovered, tx, y, w, h)
