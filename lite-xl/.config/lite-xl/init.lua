@@ -10,8 +10,8 @@ local style = require "core.style"
 ------------------------------ Themes ----------------------------------------
 
 -- core.reload_module("colors.summer")
--- core.reload_module("colors.everforest")
-core.reload_module("colors.tuhkis")
+core.reload_module("colors.everforest")
+-- core.reload_module("colors.tuhkis")
 
 --------------------------- Key bindings -------------------------------------
 
@@ -25,9 +25,12 @@ core.reload_module("colors.tuhkis")
 ------------------------------- Fonts ----------------------------------------
 
 -- customize fonts:
-style.font = renderer.font.load(USERDIR .. "/fonts/Cantarell-VF.otf", 16 * SCALE)
-style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Regular.ttf", 15 * SCALE,
-	{antialiasing="subpixel", smoothing=false})
+style.font = renderer.font.load(USERDIR .. "/fonts/Cantarell-VF.otf", 16 * SCALE, {antialiasing="subpixel", hinting="slight", smoothing=false})
+-- style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Regular.ttf", 15 * SCALE,
+-- 	{antialiasing="subpixel", smoothing=false})
+
+style.code_font = renderer.font.load(USERDIR .. "/fonts/victor-mono-semibold.ttf", 15 * SCALE,
+	{antialiasing="subpixel", hinting="slight", smoothing=false})
 --
 -- DATADIR is the location of the installed Lite XL Lua code, default color
 -- schemes and fonts.
