@@ -1,1 +1,0 @@
-return { path = "/home/anon/scifi-roguelike", documents = {["type"]="leaf",["views"]={[1]={["type"]="doc",["scroll"]={["y"]=3295,["x"]=0},["text"]=false,["active"]=true,["selection"]={[1]=168,[2]=43,[3]=168,[4]=43},["filename"]="src/sdl-backend.c"}},["active_view"]=1}, directories = {} }

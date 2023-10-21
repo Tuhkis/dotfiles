@@ -1,1 +1,0 @@
-return {recents={[3]="/home/anon/dotfiles/lite-xl/.config/lite-xl",[1]="/home/anon/four-colours",[2]="/home/anon/scifi-roguelike",[4]="/home/anon/raycaster"}, window={[1]=1908,[2]=1043,[3]=6,[4]=31,["n"]=4}, window_mode="normal", previous_find={}, previous_replace={}}

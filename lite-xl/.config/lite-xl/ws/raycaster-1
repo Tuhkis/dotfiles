@@ -1,1 +1,0 @@
-return { path = "/home/anon/raycaster", documents = {["views"]={[1]={["scroll"]={["y"]=0,["to"]={["y"]=0,["x"]=0},["x"]=0},["type"]="view",["module"]="core.emptyview",["active"]=true}},["type"]="leaf",["active_view"]=1}, directories = {} }

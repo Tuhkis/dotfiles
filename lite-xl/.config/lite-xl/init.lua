@@ -1,7 +1,3 @@
--- put user settings here
--- this module will be loaded after everything else when the application starts
--- it will be automatically reloaded when saved
-
 local core = require "core"
 local keymap = require "core.keymap"
 local config = require "core.config"
@@ -10,27 +6,37 @@ local style = require "core.style"
 ------------------------------ Themes ----------------------------------------
 
 -- core.reload_module("colors.summer")
-core.reload_module("colors.everforest")
+-- core.reload_module("colors.winter")
+-- core.reload_module("colors.everforest")
 -- core.reload_module("colors.tuhkis")
+core.reload_module("colors.github")
+-- core.reload_module("colors.github_dark")
+-- core.reload_module("colors.vscode-dark")
+-- core.reload_module("colors.monodark")
 
 --------------------------- Key bindings -------------------------------------
 
 -- key binding:
 -- keymap.add { ["ctrl+escape"] = "core:quit" }
 
--- pass 'true' for second parameter to overwrite an existing binding
--- keymap.add({ ["ctrl+pageup"] = "root:switch-to-previous-tab" }, true)
--- keymap.add({ ["ctrl+pagedown"] = "root:switch-to-next-tab" }, true)
+keymap.add({ ["ctrl+pageup"] = "root:switch-to-previous-tab" }, true)
+keymap.add({ ["ctrl+pagedown"] = "root:switch-to-next-tab" }, true)
 
 ------------------------------- Fonts ----------------------------------------
 
 -- customize fonts:
 style.font = renderer.font.load(USERDIR .. "/fonts/Cantarell-VF.otf", 16 * SCALE, {antialiasing="subpixel", hinting="slight", smoothing=false})
+
 -- style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Regular.ttf", 15 * SCALE,
 -- 	{antialiasing="subpixel", smoothing=false})
 
-style.code_font = renderer.font.load(USERDIR .. "/fonts/victor-mono-semibold.ttf", 15 * SCALE,
-	{antialiasing="subpixel", hinting="slight", smoothing=false})
+
+-- style.code_font = renderer.font.load(USERDIR .. "/fonts/victor-mono-semibold.ttf", 15 * SCALE,
+-- 	{antialiasing="subpixel", hinting="slight", smoothing=false})
+	
+style.code_font = renderer.font.load(USERDIR .. "/fonts/randy-gg.ttf", 16.5 * SCALE,
+	{antialiasing="subpixel", hinting="full", smoothing=false})
+	
 --
 -- DATADIR is the location of the installed Lite XL Lua code, default color
 -- schemes and fonts.
@@ -56,17 +62,11 @@ style.code_font = renderer.font.load(USERDIR .. "/fonts/victor-mono-semibold.ttf
 -- smoothing: true, false
 -- strikethrough: true, false
 
------------------------------- Plugins ----------------------------------------
+-- Plugins
 
--- enable or disable plugin loading setting config entries:
+-- config.plugins.treeview = false
 
--- enable plugins.trimwhitespace, otherwise it is disabled by default:
--- config.plugins.trimwhitespace = true
---
--- disable detectindent, otherwise it is enabled by default
--- config.plugins.detectindent = false
-config.plugins.treeview = false
-
+-- Setup LSP stuff.
 local lspconfig = require("plugins.lsp.config")
 
 local function add_lsp(l, s)
@@ -87,8 +87,7 @@ config.plugins.lsp.stop_unneeded_servers = true
 config.plugins.lsp.mouse_hover = true
 config.plugins.lsp.mouse_hover_delay = 300
 
----------------------------- Miscellaneous -------------------------------------
-
+-- Misc
 config.ignore_files = "a^"
 
 --[[ local ev = require("core.emptyview")
@@ -97,29 +96,4 @@ function ev.draw()
 	renderer.draw_rect(0, 0, 90000, 90000, style.background)
 	renderer.draw_text(style.big_font, "Hi yall!", 0, 0, style.text)
 end ]]--
-
--- modify list of files to ignore when indexing the project:
--- config.ignore_files = {
---   -- folders
---   "^%.svn/",        "^%.git/",   "^%.hg/",        "^CVS/", "^%.Trash/", "^%.Trash%-.*/",
---   "^node_modules/", "^%.cache/", "^__pycache__/",
---   -- files
---   "%.pyc$",         "%.pyo$",       "%.exe$",        "%.dll$",   "%.obj$", "%.o$",
---   "%.a$",           "%.lib$",       "%.so$",         "%.dylib$", "%.ncb$", "%.sdf$",
---   "%.suo$",         "%.pdb$",       "%.idb$",        "%.class$", "%.psd$", "%.db$",
---   "^desktop%.ini$", "^%.DS_Store$", "^%.directory$",
--- }
-
--- process.start { "sh", "-c", "echo hi mum" }
---[[ local command = require "core.command"
-command.add(nil, {
-	["user:Run Shell command"] = function()
-		core.command_view:enter("Command", {
-			submit = function(text, item)
-				process.start { "sh", "-c", item.text }
-				
-			end
-		})
-	end
-}) ]]--
 
