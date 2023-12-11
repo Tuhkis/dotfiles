@@ -86,6 +86,7 @@ add_lsp("pyright-langserver", lspconfig.pyright.setup)
 config.plugins.lsp.stop_unneeded_servers = true
 config.plugins.lsp.mouse_hover = true
 config.plugins.lsp.mouse_hover_delay = 300
+config.plugins.lsp.more_yielding = true
 
 -- Misc
 config.ignore_files = "a^"

@@ -1,0 +1,1 @@
+return { path = "/home/anon/dwm-tuhkis", documents = {["type"]="leaf",["views"]={[1]={["scroll"]={["y"]=0,["x"]=0},["active"]=true,["filename"]="build.sh",["type"]="doc",["text"]=false,["selection"]={[1]=19,[2]=39,[3]=19,[4]=39}}},["active_view"]=1}, directories = {} }

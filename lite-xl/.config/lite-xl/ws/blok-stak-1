@@ -1,0 +1,1 @@
+return { path = "/home/anon/blok-stak", documents = {["type"]="leaf",["views"]={[1]={["type"]="doc",["filename"]="src/main.zig",["active"]=true,["text"]=false,["selection"]={[1]=89,[2]=1,[3]=89,[4]=1},["scroll"]={["y"]=1859.796541214,["x"]=0}}},["active_view"]=1}, directories = {} }

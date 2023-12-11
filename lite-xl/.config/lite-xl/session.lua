@@ -1,0 +1,1 @@
+return {recents={[3]="/home/anon/krokus",[1]="/home/anon/blok-stak",[2]="/home/anon/dwm-tuhkis"}, window={[1]=1242,[2]=1043,[3]=6,[4]=31,["n"]=4}, window_mode="normal", previous_find={[1]="glad_glBind",[2]="",[3]="glad_glTexSora",[4]="glad_glTexBuffer",[5]="load_loader",[6]="void"}, previous_replace={[1]="U0"}}

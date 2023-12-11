@@ -1,0 +1,1 @@
+return { path = "/home/anon/kumquat", documents = {["active_view"]=1,["views"]={[1]={["scroll"]={["to"]={["x"]=0,["y"]=0},["x"]=0,["y"]=0},["active"]=true,["module"]="core.emptyview",["type"]="view"}},["type"]="leaf"}, directories = {} }
