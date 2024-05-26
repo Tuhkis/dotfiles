@@ -31,3 +31,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
+export ORX="/home/anon/orx/code"
+# >>> xmake >>>
+test -f "/home/anon/.xmake/profile" && source "/home/anon/.xmake/profile"
+# <<< xmake <<<

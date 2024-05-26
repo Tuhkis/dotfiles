@@ -1,0 +1,1 @@
+return { path = "/home/anon/yoyo", documents = {["active_view"]=1,["type"]="leaf",["views"]={[1]={["text"]=false,["filename"]="yoyo.c",["selection"]={[1]=58,[2]=12,[3]=58,[4]=12},["scroll"]={["y"]=1015.9999623299,["x"]=0},["type"]="doc",["active"]=true}}}, directories = {} }

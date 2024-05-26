@@ -6,10 +6,10 @@ local style = require "core.style"
 ------------------------------ Themes ----------------------------------------
 
 -- core.reload_module("colors.summer")
--- core.reload_module("colors.winter")
+core.reload_module("colors.winter")
 -- core.reload_module("colors.everforest")
 -- core.reload_module("colors.tuhkis")
-core.reload_module("colors.github")
+-- core.reload_module("colors.github")
 -- core.reload_module("colors.github_dark")
 -- core.reload_module("colors.vscode-dark")
 -- core.reload_module("colors.monodark")
@@ -27,15 +27,15 @@ keymap.add({ ["ctrl+pagedown"] = "root:switch-to-next-tab" }, true)
 -- customize fonts:
 style.font = renderer.font.load(USERDIR .. "/fonts/Cantarell-VF.otf", 16 * SCALE, {antialiasing="subpixel", hinting="slight", smoothing=false})
 
--- style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Regular.ttf", 15 * SCALE,
--- 	{antialiasing="subpixel", smoothing=false})
+style.code_font = renderer.font.load(USERDIR .. "/fonts/FiraCodeNerdFontMono-Regular.ttf", 15 * SCALE,
+	{antialiasing="subpixel", smoothing=false})
 
 
 -- style.code_font = renderer.font.load(USERDIR .. "/fonts/victor-mono-semibold.ttf", 15 * SCALE,
 -- 	{antialiasing="subpixel", hinting="slight", smoothing=false})
 	
-style.code_font = renderer.font.load(USERDIR .. "/fonts/randy-gg.ttf", 16.5 * SCALE,
-	{antialiasing="subpixel", hinting="full", smoothing=false})
+-- style.code_font = renderer.font.load(USERDIR .. "/fonts/randy-gg.ttf", 16.5 * SCALE,
+-- 	{antialiasing="subpixel", hinting="full", smoothing=false})
 	
 --
 -- DATADIR is the location of the installed Lite XL Lua code, default color

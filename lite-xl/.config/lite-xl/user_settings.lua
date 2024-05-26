@@ -58,7 +58,7 @@ return {
       ["messages"] = false
     },
     ["tab_type"] = "soft",
-    ["theme"] = "tuhkis",
+    ["theme"] = "betelgeuse",
     ["transitions"] = true
   }
 }
